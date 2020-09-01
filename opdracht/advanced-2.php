@@ -20,14 +20,23 @@
         <th>Value</th>
       </tr>
           <?php
-          $Jgegevens = array("Naam"=>"Jared Sackey", "Leeftijd"=>19, "Been"=>"Rechter been",
-          "Klas"=>"9A", "Hobbies"=>"Gamen, Voetballen", "Woonplaats"=>"Amsterdam",
-          "Favo club"=>"Manchester United");
+          $jGegevens = array(
+            "naam"      =>  "Jared Sackey", 
+            "leeftijd"  =>  19, 
+            "Been"      =>  "Rechter been",
+            "Klas"      =>  "9A", 
+            "Hobbies"   =>  "Gamen, Voetballen", 
+            "Woonplaats"=>  "Amsterdam",
+            "Favo club" =>  "Manchester United"
+        );
+
+
           function maakrijTD($j, $j_value){
             echo "<tr><td>$j</td>";
             echo "<td>$j_value</td></tr>";
           }
-          foreach($Jgegevens as $j => $j_value) {
+
+          foreach($jGegevens as $j => $j_value) {
             maakrijTD($j, $j_value);
         
           }
